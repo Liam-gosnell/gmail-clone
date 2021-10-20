@@ -3,7 +3,7 @@ import React from 'react';
 import './Sidebar.css';
 import AddIcon from "@material-ui/icons/Add";
 import InboxIcon from "@material-ui/icons/Inbox";
-import SidebarOption from './Sidebar';
+import SidebarOption from './SidebarOption';
 
 
 function Sidebar() {
