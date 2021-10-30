@@ -18,6 +18,8 @@ function Sidebar() {
 
             <SidebarOption Icon={InboxIcon} title="inbox" number={65} selected={true}/>
             <SidebarOption Icon={StarIcon} title="Starred" number={65}/>
+            <SidebarOption Icon={StarIcon} title="Starred" number={65}/>
+            <SidebarOption Icon={StarIcon} title="Starred" number={65}/>
         </div>
     )
 }
