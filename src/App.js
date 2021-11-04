@@ -15,15 +15,15 @@ function App() {
 
         <div className="app__body">
         <Sidebar />
-
-        <Routes>
-          <Route path="/mail">
-            <Mail />
-          </Route>
-          <Route path="/">
-            <EmailList />
-          </Route>
-        </Routes>
+        
+          <Routes>
+            <Route path="/mail">
+              <Mail />
+            </Route>
+            <Route path="/">
+              <EmailList />
+            </Route>
+          </Routes>
         </div>
       </div>
     </Router>
