@@ -1,5 +1,5 @@
 import React from 'react';
-import { Checkbox, IconButton } from '@material-ui/core';
+import { Checkbox, IconButton } from "@material-ui/core"
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import RedoIcon from '@material-ui/icons/Redo';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
@@ -21,9 +21,6 @@ function EmailList() {
                     <IconButton>
                         <MoreVertIcon />
                     </IconButton>
-                </div>
-                <div className="emailList__settingsRight">
-
                 </div>
             </div>
         </div>
