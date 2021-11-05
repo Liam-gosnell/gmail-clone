@@ -17,11 +17,9 @@ function App() {
         <Sidebar />
         
           <Routes>
-            <Route path="/mail">
-              <Mail />
+            <Route path="/mail" element={<Mail />}>
             </Route>
-            <Route path="/">
-              <EmailList />
+            <Route path="/" element={<EmailList />}>
             </Route>
           </Routes>
         </div>
