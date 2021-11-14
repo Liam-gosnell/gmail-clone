@@ -11,12 +11,17 @@ import React from 'react';
 import { IconButton } from '@material-ui/core';
 import './Mail.css';
 
+import { useNavigate } from "react-router-dom";
+
 function Mail() {
+
+    const navigate = useNavigate();
+
     return (
         <div className="mail">
             <div className="mail__tools">
                 <div className="mail__toolsLeft">
-                    <IconButton>
+                    <IconButton onClick={() => navigate("/")}>
                         <ArrowBackIcon/>
                     </IconButton>
 
