@@ -13,3 +13,29 @@
     display: flex;
 }
 
+.mail__body {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: white;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.24);
+}
+
+.mail__bodyHeader {
+    display: flex;
+    align-items: center;
+    border: 1px solid whitesmoke;
+    padding: 20px;
+    position: relative;
+}
+
+.mail_important {
+    color: #e8ab02;
+}
+
+.mail__bodyHeader > h2 {
+    font-weight: 400;
+    margin-right: 20px;
+}
