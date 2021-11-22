@@ -60,7 +60,7 @@ function EmailList() {
                 />
                 <EmailRow 
                     title="Youtube"
-                    subject="New vide suggestions"
+                    subject="New video suggestions"
                     description="This is a test, This is a test"
                     time="10pm"
                 />
