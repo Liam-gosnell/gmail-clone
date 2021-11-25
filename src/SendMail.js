@@ -3,9 +3,10 @@ import './SendMail.css';
 import CloseIcon from '@material-ui/icons/Close';
 import { Button } from '@material-ui/core';
 import { useForm } from 'react-hook-form';
+import { ErrorMessage } from '@hookform/error-message';
 
 function SendMail() {
-    const { register, handleSubmit, watch, errors } = useForm();
+    const { register, formState: { errors }, handleSubmit } = useForm();
 
     const onSubmit = (formData) => {
         
@@ -19,32 +20,44 @@ function SendMail() {
             </div>
 
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input 
+
+                <input
                 name="to" 
                 placeholder="To" 
                 type="text"
-                {...register("to", {
-                    required: true
-                  })}
+                {...register("to", { required: "This is required." })} 
+                />
+                
+                <ErrorMessage
+                    errors={errors}
+                    name="to"
+                    render={({ message }) => <p className="sendMail__error">{message}</p>}
                 />
 
                 <input 
-                name="subject" 
-                placeholder="Subject" 
-                type="text"
-                {...register("subject", {
-                    required: true
-                  })}  
+                    name="subject" 
+                    placeholder="Subject" 
+                    type="text"
+                    {...register("subject", { required: "This is required." })}
+                />
+
+                <ErrorMessage
+                    errors={errors}
+                    name="subject"
+                    render={({ message }) => <p className="sendMail__error">{message}</p>}
                 />
 
                 <input 
-                name="message" 
-                className="sendMail__message" 
-                placeholder="Message..." 
-                type="text"
-                {...register("message", {
-                    required: true
-                  })}
+                    name="message" 
+                    placeholder="Message" 
+                    type="text"
+                    {...register("message", { required: "This is required." })}
+                />
+
+                <ErrorMessage
+                    errors={errors}
+                    name="message"
+                    render={({ message }) => <p className="sendMail__error">{message}</p>}
                 />
                 
                 
