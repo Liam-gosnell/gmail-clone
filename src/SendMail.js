@@ -22,20 +22,29 @@ function SendMail() {
                 <input 
                 name="to" 
                 placeholder="To" 
-                ype="text" 
+                type="text"
+                {...register("to", {
+                    required: true
+                  })}
                 />
 
                 <input 
                 name="subject" 
                 placeholder="Subject" 
-                type="text"  
+                type="text"
+                {...register("subject", {
+                    required: true
+                  })}  
                 />
 
                 <input 
                 name="message" 
                 className="sendMail__message" 
                 placeholder="Message..." 
-                type="text" 
+                type="text"
+                {...register("message", {
+                    required: true
+                  })}
                 />
                 
                 
