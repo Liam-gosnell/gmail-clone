@@ -15,10 +15,14 @@ import { IconButton } from '@material-ui/core';
 import './Mail.css';
 
 import { useNavigate } from "react-router-dom";
+import { selectOpenMail } from './features/mailSlice';
+import { useSelector } from 'react-redux';
 
 function Mail() {
 
     const navigate = useNavigate();
+
+    const selectedMail = useSelector(selectOpenMail)
 
     return (
         <div className="mail">
@@ -76,13 +80,13 @@ function Mail() {
             </div>
             <div className="mail__body">
                 <div className="mail__bodyHeader">
-                    <h2>Subject</h2>
+                    <h2>{selectedMail?.subject}</h2>
                     <LabelImportantIcon className="mail_important" />
-                    <p>Title</p>
-                    <p className="mail__time">10:00pm</p>
+                    <p>{selectedMail?.title}</p>
+                    <p className="mail__time">{selectedMail?.time}</p>
                 </div>
                 <div className="mail__message">
-                    <p>This is a message</p>
+                    <p>{selectedMail?.description}</p>
                 </div>
             </div>
         </div>
