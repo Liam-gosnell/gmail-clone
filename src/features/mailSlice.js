@@ -1,9 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {
-  sendMessageIsOpen: false,
-};
-
 export const mailSlice = createSlice({
   name: 'mail',
   initialState:{

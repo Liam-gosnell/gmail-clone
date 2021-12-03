@@ -1,9 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {
-  sendMessageIsOpen: false,
-};
-
 export const userSlice = createSlice({
   name: 'name',
   initialState:{
