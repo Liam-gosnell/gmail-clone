@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { auth, provider } from './firebase';
 import { login } from './features/userSlice';
 import './Login.css';
-import Button from '@mui/material/Button';
+import { Button } from '@material-ui/core';
 
 
 function Login() {
@@ -26,8 +26,8 @@ function Login() {
     return (
         <div className="login">
             <div className="login__container">
-                <img src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png" alt="" />
-                <Button varient="contained" onCLick={signIn}>Login</Button>
+                <img src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Emblem.png" alt="" />
+                <Button varient="contained" onClick={signIn} >Login</Button>
             </div>
         </div>
     )
