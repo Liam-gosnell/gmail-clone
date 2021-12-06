@@ -75,18 +75,6 @@ function EmailList() {
                     
                     />
                 ))}
-                <EmailRow 
-                    title="LinkedIn"
-                    subject="Job notification"
-                    description="This is a test, This is a test"
-                    time="10pm"
-                />
-                <EmailRow 
-                    title="Youtube"
-                    subject="New video suggestions"
-                    description="This is a test, This is a test"
-                    time="10pm"
-                />
             </div>
         </div>
     );
